@@ -1,0 +1,54 @@
+.testimonal-section {
+  padding: 9.6rem 0;
+}
+
+.my-grid {
+  margin-top: 4.8rem;
+  grid-template-columns: 5fr 1fr;
+}
+
+.awards {
+  display: grid;
+  gap: 4.8rem;
+  grid-template-columns: 1fr;
+}
+
+.review img {
+  width: 100%;
+  border-radius: 50%;
+}
+
+.awards img {
+  width: 100%;
+}
+
+.reviews {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 2.4rem;
+}
+
+.review-text {
+  padding-top: 1.8rem;
+  font-size: 1.6rem;
+  line-height: 1.6;
+}
+
+.name {
+  color: #888;
+  font-size: 1.6rem;
+  padding-top: 1.8rem;
+}
+
+.rating ion-icon {
+  font-size: 2rem;
+  fill: #ff6900;
+  padding: 0.1rem;
+}
+
+.review {
+  grid-column: span 2;
+}
+.review:nth-last-child(1):nth-child(odd) {
+  grid-column: 2 / span 2;
+}

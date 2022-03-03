@@ -1,0 +1,37 @@
+/*
+950 px
+*/
+@media (max-width: 59em) {
+  .container {
+    padding: 0 5.6rem;
+  }
+  .grid--col-2 {
+    grid-template-columns: 1fr;
+  }
+  .welcome-img {
+    width: 70%;
+  }
+  .flex {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+}
+
+/*
+700 px
+*/
+@media (max-width: 44rem) {
+  .container {
+    padding: 0 3.2rem;
+  }
+}
+
+/*
+400 px
+*/
+@media (max-width: 25rem) {
+  .container {
+    padding: 0 1.8rem;
+  }
+}

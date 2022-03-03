@@ -1,0 +1,36 @@
+.welcome-section {
+  padding: 9.6rem 0;
+  background-color: #fff0e6;
+}
+
+.welcome-img {
+  display: flex;
+}
+
+.welcome-img img {
+  width: 100%;
+  display: block;
+}
+
+.text {
+  margin-top: 3.2rem;
+  line-height: 1.8;
+  font-size: 1.8rem;
+}
+
+.round-img {
+  align-self: center;
+  border-radius: 3px;
+  overflow: hidden;
+  position: relative;
+}
+
+.heading-primary {
+  margin-bottom: 5.6rem;
+}
+
+.play-btn {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+}

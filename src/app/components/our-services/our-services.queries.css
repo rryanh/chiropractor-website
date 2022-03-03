@@ -1,0 +1,59 @@
+/*
+950 px
+*/
+@media (max-width: 59em) {
+  .service-info {
+    column-gap: 6.4rem;
+    margin-top: 0;
+  }
+  .grid--col-2 {
+    grid-template-columns: 1fr;
+  }
+  .services .grid--col-2 {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+  .info {
+    justify-self: center;
+    padding: 0 5.6rem;
+  }
+  .service-item {
+    padding: 0 5.6rem;
+    margin-top: 2.4rem;
+  }
+  .btn-info {
+    margin: 3.2rem 12.8rem 0 0rem;
+  }
+}
+
+/*
+700 px
+*/
+@media (max-width: 44rem) {
+  .services .grid--col-2 {
+    grid-template-columns: 1fr 1fr;
+  }
+  .info {
+    padding: 0 3.2rem;
+  }
+  .service-item {
+    padding: 0 3.2rem;
+  }
+  .btn-info {
+    margin: 3.2rem 9.6rem 0 0rem;
+  }
+}
+
+/*
+400 px
+*/
+@media (max-width: 25rem) {
+  .info {
+    padding: 0 1.8rem;
+  }
+  .service-item {
+    padding: 0 1.8rem;
+  }
+  .btn-info {
+    margin: 3.2rem 6.4rem 0 0rem;
+  }
+}

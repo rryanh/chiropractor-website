@@ -1,0 +1,42 @@
+.chiro-section {
+  padding: 9.6rem 0;
+  background-color: #fff0e6;
+}
+
+.service {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: stretch;
+  grid-column: span 2;
+}
+
+.service:last-child:nth-child(3n - 1) {
+  grid-column-end: -2;
+}
+
+.service:nth-last-child(2):nth-child(3n + 1) {
+  grid-column-end: 4;
+}
+
+/* Dealing with single orphan */
+
+.service:last-child:nth-child(3n - 2) {
+  grid-column-end: 5;
+}
+
+.service-info {
+  margin-top: 2.4rem;
+  line-height: 1.8;
+  font-size: 1.8rem;
+  text-align: left;
+}
+
+.service img {
+  width: 17rem;
+  color: rgb(255, 105, 0);
+}
+
+.grid-section {
+  margin-top: 4.8rem;
+}

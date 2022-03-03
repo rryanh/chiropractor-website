@@ -1,0 +1,80 @@
+<section class="contact-section">
+  <div class="container-full">
+    <div class="border">
+      <div class="grid grid-custom">
+        <div class="form-container">
+          <h3 class="heading-secondary color">If you need to reach us</h3>
+          <p class="sub color">
+            If you are needing help, please do not hesitate to contact us.
+          </p>
+          <form action="" class="form color">
+            <div class="info">
+              <div class="input">
+                <label for="name">Full name *</label>
+                <input
+                  required
+                  id="name"
+                  type="text"
+                  placeholder="John Smith"
+                />
+              </div>
+              <div class="input">
+                <label for="phone">Phone number *</label>
+                <input
+                  required
+                  id="phone"
+                  type="tel"
+                  placeholder="123-456-789"
+                />
+              </div>
+              <div class="input">
+                <label for="email">Email *</label>
+                <input required type="email" placeholder="me@example.com" />
+              </div>
+              <div class="input">
+                <label for="address">Address *</label>
+                <input
+                  required
+                  id="address"
+                  type="text"
+                  placeholder="Street address"
+                />
+              </div>
+            </div>
+            <div class="form-item input">
+              <label for="visited">
+                Have you visited a chiropractor before? *
+              </label>
+              <select required name="visited" id="visited" class="visited">
+                <option value>Please choose an option</option>
+                <option value="yes">Yes</option>
+                <option value="no">No</option>
+              </select>
+            </div>
+            <div class="form-item input">
+              <label for="msg">Message *</label>
+              <textarea
+                required
+                name="msg"
+                id="msg"
+                cols="30"
+                rows="10"
+                placeholder="
+            Please describe any physical  discomfort you currently have, if any"
+              ></textarea>
+            </div>
+            <button class="btn btn-form">Submit</button>
+          </form>
+        </div>
+        <div class="map">
+          <google-map
+            [zoom]="zoom"
+            [center]="center"
+            height="100%"
+            width="100%"
+          ></google-map>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

@@ -1,5 +1,8 @@
 {
   "$schema": "./node_modules/@angular/cli/lib/config/schema.json",
+  "cli": {
+    "analytics": "14c92482-5fcf-4870-8824-d8d527e6e0af"
+  },
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
@@ -24,11 +27,14 @@
             "tsConfig": "tsconfig.app.json",
             "assets": [
               "src/favicon.ico",
-              "src/assets"
+              "src/assets",
+              {
+                "glob": "**/*.svg",
+                "input": "node_modules/ionicons/dist/ionicons/svg",
+                "output": "./svg"
+              }
             ],
-            "styles": [
-              "src/styles.css"
-            ],
+            "styles": ["src/styles.css", "src/queries.css"],
             "scripts": []
           },
           "configurations": {
@@ -91,12 +97,39 @@
             "karmaConfig": "karma.conf.js",
             "assets": [
               "src/favicon.ico",
-              "src/assets"
+              "src/assets",
+              {
+                "glob": "**/*.svg",
+                "input": "node_modules/ionicons/dist/ionicons/svg",
+                "output": "./svg"
+              }
             ],
-            "styles": [
-              "src/styles.css"
-            ],
+            "styles": ["src/styles.css"],
             "scripts": []
+          }
+        },
+        "ionic-cordova-serve": {
+          "builder": "@ionic/angular-toolkit:cordova-serve",
+          "options": {
+            "cordovaBuildTarget": "chiropractic:ionic-cordova-build",
+            "devServerTarget": "chiropractic:serve"
+          },
+          "configurations": {
+            "production": {
+              "cordovaBuildTarget": "chiropractic:ionic-cordova-build:production",
+              "devServerTarget": "chiropractic:serve:production"
+            }
+          }
+        },
+        "ionic-cordova-build": {
+          "builder": "@ionic/angular-toolkit:cordova-build",
+          "options": {
+            "browserTarget": "chiropractic:build"
+          },
+          "configurations": {
+            "production": {
+              "browserTarget": "chiropractic:build:production"
+            }
           }
         }
       }

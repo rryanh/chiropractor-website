@@ -1,0 +1,95 @@
+.footer {
+  padding: 9.6rem 0;
+  border-top: 1px solid #eee;
+}
+.padding-bottom {
+  padding-bottom: 1.2rem;
+}
+
+.flex {
+  display: flex;
+  flex-direction: column;
+}
+
+.media {
+  padding-top: 1.8rem;
+  display: flex;
+  gap: 2.4rem;
+}
+
+.media ion-icon {
+  height: 3.2rem;
+  width: 3.2rem;
+  color: #555;
+  transition: all 0.3s;
+}
+
+.media ion-icon:hover {
+  color: #333;
+}
+
+.title {
+  font-size: 1.8rem;
+  font-weight: 500;
+  margin-bottom: 1.2rem;
+}
+
+.footer-nav {
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+  font-size: 1.6rem;
+}
+.footer-nav li {
+  padding-top: 1.2rem;
+}
+
+.link {
+  text-decoration: none;
+  color: #777;
+  transition: all 0.3s;
+  border-bottom: 1px solid rgba(0 0 0 0);
+}
+
+.link:hover {
+  color: #333;
+  border-color: #333;
+}
+
+.sub-heading {
+  padding-top: 1.2rem;
+}
+
+.form {
+  font-size: 1.6rem;
+}
+
+.form-input label {
+  color: #333;
+  font-weight: 500;
+}
+.form-input input {
+  background-color: #fff0e6;
+  border-radius: 9px;
+  padding: 1.2rem;
+  border: none;
+  transition: all 10.3s;
+  outline-color: #cc5400;
+}
+.form-input input:focus {
+}
+
+.btn-form {
+  margin-top: 1.2rem;
+  font-size: 1.6rem;
+  border-radius: 9px;
+  padding: 1.2rem 0;
+  background-color: #ff6900;
+  font-weight: 500;
+  color: #fff;
+  transition: all 0.3s;
+}
+
+.btn-form:hover {
+  background-color: #cc5400;
+}
