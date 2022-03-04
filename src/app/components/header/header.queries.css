@@ -1,0 +1,26 @@
+/*
+900 px
+*/
+@media (max-width: 59em) {
+  .mobile-nav {
+    display: inline-block;
+  }
+  .header-nav {
+    display: none;
+  }
+}
+
+/*
+700 px
+*/
+@media (max-width: 44em) {
+  .header {
+    padding: 1.2rem 1.8rem;
+  }
+}
+
+/*
+  400 px
+  */
+@media (max-width: 25rem) {
+}

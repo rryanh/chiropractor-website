@@ -28,3 +28,12 @@
 .nav-link:hover {
   color: #ff6900;
 }
+
+.mobile-nav {
+  display: none;
+}
+
+.mobile-nav-icon {
+  width: 4.8rem;
+  height: 4.8rem;
+}

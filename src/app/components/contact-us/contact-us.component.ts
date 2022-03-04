@@ -3,7 +3,7 @@ import { NgModule, CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
 @Component({
   selector: 'app-contact-us',
   templateUrl: './contact-us.component.html',
-  styleUrls: ['./contact-us.component.css'],
+  styleUrls: ['./contact-us.component.css', './contact-us.queries.css'],
 })
 export class ContactUsComponent implements OnInit {
   zoom = 18;
