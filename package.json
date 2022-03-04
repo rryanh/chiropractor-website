@@ -2,9 +2,9 @@
   "name": "chiropractic",
   "version": "0.0.0",
   "scripts": {
+    "ng": "ng",
     "start": "node server.js",
     "build": "ng build --prod",
-    "ng": "ng",
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
     "heroku-postbuild": "ng build --prod"
