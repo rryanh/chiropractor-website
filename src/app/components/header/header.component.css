@@ -28,6 +28,9 @@
   font-weight: 500;
   transition: all 0.3s;
 }
+.active {
+  color: #ff6900;
+}
 
 .nav-link:hover {
   color: #ff6900;

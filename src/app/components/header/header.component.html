@@ -6,27 +6,44 @@
   <nav class="header-nav">
     <ul class="nav-list">
       <li class="nav-list-item">
-        <a [routerLink]="['/home']" class="nav-link">Home</a>
+        <a routerLinkActive="active" routerLink="/home" class="nav-link"
+          >Home</a
+        >
       </li>
       <li class="nav-list-item dropdown">
-        <a [routerLink]="['/about-us']" class="nav-link dropdown-link"
+        <a
+          routerLink="/about-us"
+          routerLinkActive="active"
+          class="nav-link dropdown-link"
           >About &#9662;</a
         >
         <div class="dropdown-content">
-          <a [routerLink]="['/about-us']" class="nav-link">About us</a>
-          <a [routerLink]="['/services']" class="nav-link"
+          <a routerLink="/about-us" routerLinkActive="active" class="nav-link"
+            >About us</a
+          >
+          <a routerLink="/services" routerLinkActive="active" class="nav-link"
             >Services & Pricing</a
           >
-          <a [routerLink]="['/awards']" class="nav-link">Awards</a>
-          <a [routerLink]="['/our-team']" class="nav-link">Our team</a>
+          <a routerLink="/awards" routerLinkActive="active" class="nav-link"
+            >Awards</a
+          >
+          <a routerLink="/our-team" routerLinkActive="active" class="nav-link"
+            >Our team</a
+          >
 
-          <a [routerLink]="['/blog']" class="nav-link">Blog</a>
-          <a [routerLink]="['/join-us']" class="nav-link">Join us</a>
+          <a routerLink="/blog" routerLinkActive="active" class="nav-link"
+            >Blog</a
+          >
+          <a routerLink="/join-us" routerLinkActive="active" class="nav-link"
+            >Join us</a
+          >
         </div>
       </li>
 
       <li class="nav-list-item">
-        <a [routerLink]="['/contact']" class="nav-link">Contact</a>
+        <a routerLink="/contact" routerLinkActive="active" class="nav-link"
+          >Contact</a
+        >
       </li>
       <li class="nav-list-item">
         <a
