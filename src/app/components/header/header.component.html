@@ -1,22 +1,41 @@
 <header class="header">
-  <a href="" class="header-logo">
+  <a href="#" class="header-logo">
     <img src="../../../assets/imgs/main-logo-dark.webp" alt="" />
   </a>
 
   <nav class="header-nav">
     <ul class="nav-list">
       <li class="nav-list-item">
-        <a href="#" class="nav-link">Home</a>
+        <a [routerLink]="['/home']" class="nav-link">Home</a>
       </li>
-      <li class="nav-list-item">
-        <a href="#" class="nav-link">About</a>
+      <li class="nav-list-item dropdown">
+        <a [routerLink]="['/about-us']" class="nav-link dropdown-link"
+          >About &#9662;</a
+        >
+        <div class="dropdown-content">
+          <a [routerLink]="['/about-us']" class="nav-link">About us</a>
+          <a [routerLink]="['/services']" class="nav-link"
+            >Services & Pricing</a
+          >
+          <a [routerLink]="['/awards']" class="nav-link">Awards</a>
+          <a [routerLink]="['/our-team']" class="nav-link">Our team</a>
+
+          <a [routerLink]="['/blog']" class="nav-link">Blog</a>
+          <a [routerLink]="['/join-us']" class="nav-link">Join us</a>
+        </div>
       </li>
 
       <li class="nav-list-item">
-        <a href="#" class="nav-link">Contact</a>
+        <a [routerLink]="['/contact']" class="nav-link">Contact</a>
       </li>
       <li class="nav-list-item">
-        <a href="" class="btn btn-full">Make An Appointment</a>
+        <a
+          href="https://harmonychiropracticclinic.janeapp.com/"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="btn btn-full"
+          >Make An Appointment</a
+        >
       </li>
     </ul>
   </nav>

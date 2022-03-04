@@ -65,6 +65,7 @@ app-root {
 html {
   font-size: 62.5%;
   overflow-x: hidden;
+  min-height: 100vh;
 }
 
 * {
@@ -80,11 +81,17 @@ body {
   color: #555;
   overflow-x: hidden;
   overflow-y: hidden;
-  position: relative;
-  max-height: fit-content;
-  height: fit-content;
 }
 
+app-home {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+app-footer {
+  margin-top: auto;
+}
 .grid {
   display: grid;
   row-gap: 9.6rem;

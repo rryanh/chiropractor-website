@@ -4,7 +4,7 @@ import { GoogleMapsModule } from '@angular/google-maps';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { HomeComponent } from './components/home/home.component';
+import { HomePageComponent } from './pages/home-page/home.component';
 import { HeaderComponent } from './components/header/header.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { WelcomeComponent } from './components/welcome/welcome.component';
@@ -22,11 +22,20 @@ import { TestimonialsComponent } from './components/testimonials/testimonials.co
 import { IonicModule } from '@ionic/angular';
 import { ContactUsComponent } from './components/contact-us/contact-us.component';
 import { ReviewComponent } from './components/review/review.component';
+import { ServicesPageComponent } from './pages/services-page/services-page.component';
+import { AboutUsPageComponent } from './pages/about-us-page/about-us-page.component';
+import { OurTeamPageComponent } from './pages/our-team-page/our-team-page.component';
+import { BlogPageComponent } from './pages/blog-page/blog-page.component';
+import { JoinUsPageComponent } from './pages/join-us-page/join-us-page.component';
+import { Error404PageComponent } from './pages/error404-page/error404-page.component';
+import { LandingPageComponent } from './pages/landing-page/landing-page.component';
+import { AwardsPageComponent } from './pages/awards-page/awards-page.component';
+import { ContactPageComponent } from './pages/contact-page/contact-page.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    HomeComponent,
+    HomePageComponent,
     HeaderComponent,
     FooterComponent,
     WelcomeComponent,
@@ -43,6 +52,15 @@ import { ReviewComponent } from './components/review/review.component';
     TestimonialsComponent,
     ContactUsComponent,
     ReviewComponent,
+    ServicesPageComponent,
+    AboutUsPageComponent,
+    OurTeamPageComponent,
+    BlogPageComponent,
+    JoinUsPageComponent,
+    Error404PageComponent,
+    LandingPageComponent,
+    AwardsPageComponent,
+    ContactPageComponent,
   ],
   imports: [
     BrowserModule,

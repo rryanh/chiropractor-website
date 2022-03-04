@@ -15,6 +15,10 @@
 }
 
 .nav-list-item {
+  transition: all 0.3s;
+}
+.nav-list-item:hover .dropdown-link {
+  color: #ff6900;
 }
 
 .nav-link {
@@ -36,4 +40,33 @@
 .mobile-nav-icon {
   width: 4.8rem;
   height: 4.8rem;
+}
+
+.dropdown {
+  position: relative;
+}
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 23rem;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  padding: 1.8rem 0 0;
+  z-index: 1;
+  border-bottom-left-radius: 9px;
+  border-bottom-right-radius: 9px;
+  border-top-right-radius: 9px;
+}
+
+.dropdown-content .nav-link {
+  font-size: 1.5rem;
+  padding: 1.2rem 2.4rem;
+  display: block;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+.parent:hover * {
+  background-color: red;
 }
