@@ -4,7 +4,7 @@
   </a>
 
   <nav class="header-nav">
-    <ul class="nav-list">
+    <ul class="nav-list flex-row">
       <li class="nav-list-item">
         <a routerLinkActive="active" routerLink="/home" class="nav-link"
           >Home</a
@@ -90,32 +90,98 @@
   </nav>
 
   <div class="mobile-nav">
-    <ion-icon class="mobile-nav-icon" name="menu-outline"></ion-icon>
+    <ion-icon
+      class="mobile-nav-icon"
+      name="menu-outline"
+      (click)="showMobileNav()"
+      [ngClass]="{ hide: sideNav }"
+    ></ion-icon>
+  </div>
+
+  <div class="mobile-nav-options" [ngClass]="{ 'display-mobile-nav': sideNav }">
+    <div class="exit">
+      <ion-icon
+        class="mobile-nav-icon"
+        name="close-outline"
+        (click)="hideMobileNav()"
+      ></ion-icon>
+    </div>
+
+    <ul (click)="mobileNavClick()" class="mobile-list mobile-nav-list">
+      <li>
+        <a routerLinkActive="active" routerLink="/home" class="nav-link"
+          >Home</a
+        >
+      </li>
+      <li>
+        <a
+          routerLink="/about-us"
+          #rla0="routerLinkActive"
+          routerLinkActive="active"
+          class="nav-link"
+          >About us</a
+        >
+      </li>
+      <li>
+        <a
+          routerLink="/services"
+          routerLinkActive="active"
+          #rla1="routerLinkActive"
+          class="nav-link"
+          >Services & Pricing</a
+        >
+      </li>
+
+      <li>
+        <a
+          routerLink="/awards"
+          routerLinkActive="active"
+          #rla2="routerLinkActive"
+          class="nav-link"
+          >Awards</a
+        >
+      </li>
+      <li>
+        <a
+          routerLink="/our-team"
+          routerLinkActive="active"
+          #rla3="routerLinkActive"
+          class="nav-link"
+          >Our team</a
+        >
+      </li>
+      <li>
+        <a
+          routerLink="/blog"
+          routerLinkActive="active"
+          #rla4="routerLinkActive"
+          class="nav-link"
+          >Blog</a
+        >
+      </li>
+      <li>
+        <a
+          routerLink="/join-us"
+          routerLinkActive="active"
+          #rla5="routerLinkActive"
+          class="nav-link"
+          >Join us</a
+        >
+      </li>
+      <li>
+        <a routerLink="/contact" routerLinkActive="active" class="nav-link"
+          >Contact</a
+        >
+      </li>
+      <li>
+        <a
+          href="https://harmonychiropracticclinic.janeapp.com/"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="btn btn-full"
+          >Make An Appointment</a
+        >
+      </li>
+    </ul>
   </div>
 </header>
-
-<!-- 
-@TODO:
-    Should get moved undo about us
-
- <li class="nav-list-item">
-                <a href="#" class="nav-link">Awards</a>
-            </li>
-            <li class="nav-list-item">
-                <a href="#" class="nav-link">Our team</a>
-            </li>
-            <li class="nav-list-item">
-                <a href="#" class="nav-link">Services / Pricing</a>
-            </li>
-            <li class="nav-list-item">
-                <a href="#" class="nav-link">Blog</a>
-            </li>
-            <li class="nav-list-item">
-                <a href="#" class="nav-link">Join us</a>
-            </li>
-
-
-
-
-
- -->

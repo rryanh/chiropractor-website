@@ -9,9 +9,9 @@
 .nav-list {
   list-style: none;
   display: flex;
-  flex-direction: row;
   gap: 4.8rem;
   align-items: center;
+  flex-direction: row;
 }
 
 .nav-list-item {
@@ -43,6 +43,7 @@
 .mobile-nav-icon {
   width: 4.8rem;
   height: 4.8rem;
+  transition: all 0.3s;
 }
 
 .dropdown {
@@ -72,4 +73,38 @@
 }
 .parent:hover * {
   background-color: red;
+}
+
+.display-mobile-nav {
+  z-index: 1;
+  background-color: rgba(255, 255, 255, 0.95);
+  transform: translateX(-100%);
+}
+
+.mobile-nav-options {
+  position: absolute;
+  top: 0;
+  left: 100%;
+  width: 100%;
+  height: 100%;
+  transition: all 0.4s;
+  display: flex;
+  flex-direction: column;
+}
+
+.hide {
+  opacity: 0;
+}
+
+.exit {
+  padding: 1.6rem 3.2rem;
+  display: flex;
+  justify-content: flex-end;
+}
+.mobile-nav-list {
+  list-style: none;
+  display: flex;
+  gap: 2.4rem;
+  align-items: center;
+  flex-direction: column;
 }

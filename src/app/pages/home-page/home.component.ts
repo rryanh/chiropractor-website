@@ -9,4 +9,8 @@ export class HomePageComponent implements OnInit {
   constructor() {}
 
   ngOnInit(): void {}
+  onActivate(e: any) {
+    console.log(escape);
+    window.scrollTo(0, 0);
+  }
 }

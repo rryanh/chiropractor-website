@@ -25,6 +25,9 @@
 700 px
 */
 @media (max-width: 44em) {
+  .form {
+    margin: 3.2rem 0 0 0;
+  }
   .contact-section {
     padding-top: 5.6rem;
   }

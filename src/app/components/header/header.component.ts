@@ -6,7 +6,20 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./header.component.css', './header.queries.css'],
 })
 export class HeaderComponent implements OnInit {
+  sideNav = false;
   constructor() {}
 
   ngOnInit(): void {}
+
+  showMobileNav() {
+    this.sideNav = true;
+  }
+
+  hideMobileNav() {
+    this.sideNav = false;
+  }
+
+  mobileNavClick() {
+    this.sideNav = false;
+  }
 }
