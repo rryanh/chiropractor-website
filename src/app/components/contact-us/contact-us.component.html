@@ -7,61 +7,126 @@
           <p class="sub color">
             If you are needing help, please do not hesitate to contact us.
           </p>
-          <form action="" class="form color">
+          <form
+            [formGroup]="contactForm"
+            class="form color"
+            (ngSubmit)="submitForm()"
+          >
             <div class="info">
               <div class="input">
                 <label for="name">Full name *</label>
                 <input
-                  required
+                  formControlName="name"
                   id="name"
                   type="text"
                   placeholder="John Smith"
                 />
+                <div
+                  *ngIf="submitted && f.name.errors"
+                  class="alert alert-danger"
+                >
+                  <div *ngIf="f.name.errors?.required">Name is required.</div>
+                </div>
               </div>
+
               <div class="input">
                 <label for="phone">Phone number *</label>
                 <input
-                  required
+                  formControlName="phone"
                   id="phone"
                   type="tel"
                   placeholder="123-456-789"
                 />
+                <div
+                  *ngIf="submitted && f.phone.errors"
+                  class="alert alert-danger"
+                >
+                  <div *ngIf="f.phone.errors?.required">Phone is required.</div>
+                  <div
+                    *ngIf="!f.phone.errors?.required && f.phone.errors?.pattern"
+                  >
+                    Incorrect phone format.
+                  </div>
+                </div>
               </div>
               <div class="input">
                 <label for="email">Email *</label>
-                <input required type="email" placeholder="me@example.com" />
+                <input
+                  formControlName="email"
+                  type="email"
+                  placeholder="me@example.com"
+                />
+                <div
+                  *ngIf="submitted && f.email.errors"
+                  class="alert alert-danger"
+                >
+                  <div *ngIf="f.email.errors?.required">Email is required.</div>
+                  <div
+                    *ngIf="!f.email.errors?.required && f.email.errors?.email"
+                  >
+                    Incorrect email format.
+                  </div>
+                </div>
               </div>
               <div class="input">
                 <label for="address">Address *</label>
                 <input
-                  required
+                  formControlName="address"
                   id="address"
                   type="text"
                   placeholder="Street address"
                 />
+                <div
+                  *ngIf="submitted && f.address.errors"
+                  class="alert alert-danger"
+                >
+                  <div *ngIf="f.address.errors?.required">
+                    Address is required.
+                  </div>
+                </div>
               </div>
             </div>
             <div class="form-item input">
               <label for="visited">
                 Have you visited a chiropractor before? *
               </label>
-              <select required name="visited" id="visited" class="visited">
-                <option value>Please choose an option</option>
+              <select
+                formControlName="visited"
+                name="visited"
+                id="visited"
+                class="visited"
+                placeholder="Please choose an option"
+              >
                 <option value="yes">Yes</option>
                 <option value="no">No</option>
               </select>
+              <div
+                *ngIf="submitted && f.visited.errors"
+                class="alert alert-danger"
+              >
+                <div *ngIf="f.visited.errors?.required">
+                  Please choose an option.
+                </div>
+              </div>
             </div>
             <div class="form-item input">
               <label for="msg">Message *</label>
               <textarea
-                required
+                formControlName="message"
                 name="msg"
                 id="msg"
                 cols="30"
                 rows="10"
-                placeholder="
-            Please describe any physical  discomfort you currently have, if any"
+                placeholder="Please describe any physical  discomfort you currently have, if any"
               ></textarea>
+              <div
+                *ngIf="submitted && f.message.errors"
+                class="alert alert-danger"
+              >
+                <div *ngIf="f.message.errors?.required">
+                  Message is required.
+                </div>
+              </div>
             </div>
             <button class="btn btn-form">Submit</button>
           </form>

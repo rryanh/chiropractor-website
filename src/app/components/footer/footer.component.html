@@ -66,17 +66,27 @@
         <p class="title">Newsletter & events</p>
         <div class="newsletter">
           <p class="title-intro sub-heading">Inspire your inbox</p>
-          <form action="post" class="flex form">
+          <form
+            [formGroup]="newsletterForm"
+            (ngSubmit)="submitForm()"
+            class="flex form"
+          >
             <div class="flex form-input">
               <label class="email" for="email">Your email</label>
               <input
-                required
+                formControlName="email"
                 id="email"
                 type="email"
                 placeholder="me@example.com"
               />
             </div>
             <button class="btn btn-form">Subscribe</button>
+            <div *ngIf="submitted && f.email.errors" class="alert alert-danger">
+              <div *ngIf="f.email.errors?.required">Email is required.</div>
+              <div *ngIf="!f.email.errors?.required && f.email.errors?.email">
+                Incorrect email format.
+              </div>
+            </div>
           </form>
         </div>
       </div>

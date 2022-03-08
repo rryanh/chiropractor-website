@@ -34,6 +34,7 @@
 .input {
   display: flex;
   flex-direction: column;
+  position: relative;
 }
 .input label {
   font-weight: 500;
@@ -99,4 +100,12 @@
 
 label {
   margin-bottom: 2px;
+}
+
+.alert-danger {
+  position: absolute;
+  bottom: -1.4rem;
+  left: 1rem;
+  font-size: 1.2rem;
+  color: #af0606;
 }
