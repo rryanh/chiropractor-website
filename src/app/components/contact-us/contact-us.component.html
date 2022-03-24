@@ -137,7 +137,9 @@
             [center]="center"
             height="100%"
             width="100%"
-          ></google-map>
+          >
+            <map-marker [position]="center" (mapClick)="openMap()"></map-marker>
+          </google-map>
         </div>
       </div>
     </div>
