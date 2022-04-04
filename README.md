@@ -1,6 +1,6 @@
 # Chiropractic
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 12.2.16.
+Live site [Here](https://harmony-chiro.herokuapp.com/) 
 
 ## Development server
 
